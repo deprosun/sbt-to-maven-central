@@ -55,4 +55,16 @@ rm -rf /github/home/.private.key
 #       echo "Key is NOT empty"
 # fi
 
+echo "User length"
+LEN=${#NEXUS_USER}
+echo $LEN
+
+echo "Pass length"
+LEN=${#NEXUS_PASSWORD}
+echo $LEN
+
+echo "PK length"
+LEN=${#GPG_PK}
+echo $LEN
+
 sbt +publish
