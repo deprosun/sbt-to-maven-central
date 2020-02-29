@@ -46,11 +46,11 @@ rm -rf /github/home/.private.key
 
 # gpg --list-keys
 
-if [ -z "$GPG_PK" ]
-then
-      echo "Key is empty"
-else
-      echo "Key is NOT empty"
-fi
+# if [ -z "$GPG_PK" ]
+# then
+#       echo "Key is empty"
+# else
+#       echo "Key is NOT empty"
+# fi
 
-# sbt +publish
+sbt +publish
