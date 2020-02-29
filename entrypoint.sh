@@ -44,9 +44,6 @@ rm -rf /github/home/.private.key
 #   echo 'addSbtPlugin("org.xerial.sbt" % "sbt-sonatype" % "2.3")'
 # } >> /github/home/.sbt/1.0/plugins/plugins.sbt
 
-# sbt +publish
-echo "u: $NEXUS_USER"
+# gpg --list-keys
 
-gpg --list-keys
-
-sbt clean publishSigned sonatypeRelease
+sbt +publish
