@@ -1,5 +1,7 @@
 #!/bin/bash
 
+ls -a ~/
+
 mkdir -p /github/home/.sbt/1.0/plugins/
 
 # touch /github/home/.sbt/.credentials
