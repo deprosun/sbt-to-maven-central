@@ -38,11 +38,11 @@ echo -e "$GPG_PK" > /github/home/.private.key
 gpg --import --batch /github/home/.private.key
 rm -rf /github/home/.private.key
 
-touch /github/home/.sbt/1.0/plugins/plugins.sbt
-cat /dev/null > /github/home/.sbt/1.0/plugins/plugins.sbt
-{
-  echo 'addSbtPlugin("org.xerial.sbt" % "sbt-sonatype" % "2.3")'
-} >> /github/home/.sbt/1.0/plugins/plugins.sbt
+# touch /github/home/.sbt/1.0/plugins/plugins.sbt
+# cat /dev/null > /github/home/.sbt/1.0/plugins/plugins.sbt
+# {
+#   echo 'addSbtPlugin("org.xerial.sbt" % "sbt-sonatype" % "2.3")'
+# } >> /github/home/.sbt/1.0/plugins/plugins.sbt
 
 # gpg --list-keys
 
@@ -53,7 +53,4 @@ cat /dev/null > /github/home/.sbt/1.0/plugins/plugins.sbt
 #       echo "Key is NOT empty"
 # fi
 
-ls -lrt /github/home/.sbt/1.0/sonatype.sbt
-ls -lrt /github/home/.sbt/1.0/plugins/plugins.sbt
-
-# sbt +publish
+sbt +publish
