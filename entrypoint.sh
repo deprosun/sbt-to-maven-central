@@ -15,6 +15,7 @@ mkdir -p /github/home/.sbt/1.0/plugins/
 touch /github/home/.sbt/1.0/sonatype.sbt
 cat /dev/null > /github/home/.sbt/1.0/sonatype.sbt
 {
+  echo 'organization := "com.github.deprosun"'
   echo 'credentials += Credentials("Sonatype Nexus Repository Manager",';
   echo '        "oss.sonatype.org",';
   echo '        "'"$NEXUS_USER"'",';
