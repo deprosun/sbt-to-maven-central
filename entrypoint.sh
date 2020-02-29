@@ -53,7 +53,7 @@ cat /dev/null > /github/home/.sbt/1.0/plugins/plugins.sbt
 #       echo "Key is NOT empty"
 # fi
 
-ls /github/home/.sbt/1.0/sonatype.sbt
-ls /github/home/.sbt/1.0/plugins/plugins.sbt
+ls -lrt /github/home/.sbt/1.0/sonatype.sbt
+ls -lrt /github/home/.sbt/1.0/plugins/plugins.sbt
 
 # sbt +publish
