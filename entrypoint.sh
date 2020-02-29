@@ -1,5 +1,6 @@
 #!/bin/bash
 
+pwd
 ls -a ~/
 
 mkdir -p /github/home/.sbt/1.0/plugins/
