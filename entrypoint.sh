@@ -46,4 +46,4 @@
 
 # sbt +publish
 
-pwd
+ls
