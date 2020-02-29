@@ -45,6 +45,8 @@ rm -rf /github/home/.private.key
 # } >> /github/home/.sbt/1.0/plugins/plugins.sbt
 
 # sbt +publish
-echo "content of sbt"
-ls /github/home/.sbt/1.0/
-sbt clean publishSigned sonatypeRelease
+echo "u: $NEXUS_USER"
+
+gpg --list-keys
+
+# sbt clean publishSigned sonatypeRelease
