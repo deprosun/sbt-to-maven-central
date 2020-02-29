@@ -49,4 +49,4 @@ echo "u: $NEXUS_USER"
 
 gpg --list-keys
 
-# sbt clean publishSigned sonatypeRelease
+sbt clean publishSigned sonatypeRelease
