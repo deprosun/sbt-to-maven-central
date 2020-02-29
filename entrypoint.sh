@@ -46,4 +46,11 @@ rm -rf /github/home/.private.key
 
 # gpg --list-keys
 
-sbt +publish
+if [ -z "$NEXUS_USER" ]
+then
+      echo "User is empty"
+else
+      echo "User is NOT empty"
+fi
+
+# sbt +publish
